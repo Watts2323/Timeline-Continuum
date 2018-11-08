@@ -8,23 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		1978112B2193A82100CC9FD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978112A2193A82100CC9FD4 /* AppDelegate.swift */; };
-		1978112D2193A82100CC9FD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978112C2193A82100CC9FD4 /* ViewController.swift */; };
 		197811302193A82100CC9FD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1978112E2193A82100CC9FD4 /* Main.storyboard */; };
 		197811322193A82200CC9FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 197811312193A82200CC9FD4 /* Assets.xcassets */; };
 		197811352193A82200CC9FD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197811332193A82200CC9FD4 /* LaunchScreen.storyboard */; };
 		1978113F2193A83300CC9FD4 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1978113E2193A83300CC9FD4 /* CloudKit.framework */; };
+		19FE829A2193B30C000EBDAC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE82992193B30C000EBDAC /* Post.swift */; };
+		19FE829C2193B459000EBDAC /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE829B2193B459000EBDAC /* Comment.swift */; };
+		19FE829E2193B75F000EBDAC /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE829D2193B75F000EBDAC /* PostController.swift */; };
+		19FE82A12193CC87000EBDAC /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE82A02193CC87000EBDAC /* PostTableViewCell.swift */; };
+		19FE82A42193CD95000EBDAC /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE82A32193CD95000EBDAC /* PostListTableViewController.swift */; };
+		19FE82A72193CE9C000EBDAC /* PostDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE82A62193CE9C000EBDAC /* PostDetailTableViewController.swift */; };
+		19FE82B42194EEC1000EBDAC /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE82B32194EEC1000EBDAC /* Date.swift */; };
+		19FE82B62194FD84000EBDAC /* AddPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE82B52194FD83000EBDAC /* AddPostTableViewController.swift */; };
+		19FE82B82194FD9D000EBDAC /* PhotoSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE82B72194FD9C000EBDAC /* PhotoSelectorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		197811272193A82100CC9FD4 /* Timeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1978112A2193A82100CC9FD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1978112C2193A82100CC9FD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1978112F2193A82100CC9FD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		197811312193A82200CC9FD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		197811342193A82200CC9FD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		197811362193A82200CC9FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1978113C2193A83100CC9FD4 /* Timeline.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Timeline.entitlements; sourceTree = "<group>"; };
 		1978113E2193A83300CC9FD4 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		19FE82992193B30C000EBDAC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		19FE829B2193B459000EBDAC /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		19FE829D2193B75F000EBDAC /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
+		19FE82A02193CC87000EBDAC /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		19FE82A32193CD95000EBDAC /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
+		19FE82A62193CE9C000EBDAC /* PostDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailTableViewController.swift; sourceTree = "<group>"; };
+		19FE82B32194EEC1000EBDAC /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		19FE82B52194FD83000EBDAC /* AddPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostTableViewController.swift; sourceTree = "<group>"; };
+		19FE82B72194FD9C000EBDAC /* PhotoSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +75,11 @@
 		197811292193A82100CC9FD4 /* Timeline */ = {
 			isa = PBXGroup;
 			children = (
+				19FE82B22194EEA7000EBDAC /* Extension */,
+				19FE82982193B301000EBDAC /* Model */,
 				1978113C2193A83100CC9FD4 /* Timeline.entitlements */,
-				1978112A2193A82100CC9FD4 /* AppDelegate.swift */,
-				1978112C2193A82100CC9FD4 /* ViewController.swift */,
-				1978112E2193A82100CC9FD4 /* Main.storyboard */,
-				197811312193A82200CC9FD4 /* Assets.xcassets */,
-				197811332193A82200CC9FD4 /* LaunchScreen.storyboard */,
-				197811362193A82200CC9FD4 /* Info.plist */,
+				197811402193AA4200CC9FD4 /* Resources */,
+				197811412193AB0D00CC9FD4 /* Storyboard */,
 			);
 			path = Timeline;
 			sourceTree = "<group>";
@@ -76,6 +90,72 @@
 				1978113E2193A83300CC9FD4 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		197811402193AA4200CC9FD4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				197811312193A82200CC9FD4 /* Assets.xcassets */,
+				197811362193A82200CC9FD4 /* Info.plist */,
+				1978112A2193A82100CC9FD4 /* AppDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		197811412193AB0D00CC9FD4 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1978112E2193A82100CC9FD4 /* Main.storyboard */,
+				197811332193A82200CC9FD4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		19FE82982193B301000EBDAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19FE82992193B30C000EBDAC /* Post.swift */,
+				19FE829B2193B459000EBDAC /* Comment.swift */,
+				19FE82A22193CC8A000EBDAC /* Views */,
+				19FE829F2193CAED000EBDAC /* ModelController */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		19FE829F2193CAED000EBDAC /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				19FE829D2193B75F000EBDAC /* PostController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		19FE82A22193CC8A000EBDAC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				19FE82A02193CC87000EBDAC /* PostTableViewCell.swift */,
+				19FE82A52193CD99000EBDAC /* ViewController */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		19FE82A52193CD99000EBDAC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				19FE82A32193CD95000EBDAC /* PostListTableViewController.swift */,
+				19FE82A62193CE9C000EBDAC /* PostDetailTableViewController.swift */,
+				19FE82B52194FD83000EBDAC /* AddPostTableViewController.swift */,
+				19FE82B72194FD9C000EBDAC /* PhotoSelectorViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		19FE82B22194EEA7000EBDAC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				19FE82B32194EEC1000EBDAC /* Date.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,8 +237,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1978112D2193A82100CC9FD4 /* ViewController.swift in Sources */,
 				1978112B2193A82100CC9FD4 /* AppDelegate.swift in Sources */,
+				19FE829E2193B75F000EBDAC /* PostController.swift in Sources */,
+				19FE82A12193CC87000EBDAC /* PostTableViewCell.swift in Sources */,
+				19FE82B42194EEC1000EBDAC /* Date.swift in Sources */,
+				19FE82A42193CD95000EBDAC /* PostListTableViewController.swift in Sources */,
+				19FE829C2193B459000EBDAC /* Comment.swift in Sources */,
+				19FE82B82194FD9D000EBDAC /* PhotoSelectorViewController.swift in Sources */,
+				19FE829A2193B30C000EBDAC /* Post.swift in Sources */,
+				19FE82B62194FD84000EBDAC /* AddPostTableViewController.swift in Sources */,
+				19FE82A72193CE9C000EBDAC /* PostDetailTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +395,7 @@
 				CODE_SIGN_ENTITLEMENTS = Timeline/Timeline.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57CQ48CJGQ;
-				INFOPLIST_FILE = Timeline/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Timeline/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,7 +414,7 @@
 				CODE_SIGN_ENTITLEMENTS = Timeline/Timeline.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57CQ48CJGQ;
-				INFOPLIST_FILE = Timeline/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Timeline/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
