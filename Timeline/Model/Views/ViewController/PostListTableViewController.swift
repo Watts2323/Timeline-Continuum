@@ -12,8 +12,13 @@ class PostListTableViewController: UITableViewController {
 
     @IBOutlet weak var postSearchbar: UISearchBar!
     
+    var resultsArray: [SearchableRecord]?
+    
+    var isSearching: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        postSearchbar.delegate? = self
     }
 
     // MARK: - Table view data source
@@ -51,5 +56,10 @@ class PostListTableViewController: UITableViewController {
             destinationVC?.post = post
         }
     }
+}
 
+extension PostListTableViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+    }
 }

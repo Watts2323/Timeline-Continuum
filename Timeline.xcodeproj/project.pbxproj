@@ -21,6 +21,7 @@
 		19FE82B42194EEC1000EBDAC /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE82B32194EEC1000EBDAC /* Date.swift */; };
 		19FE82B62194FD84000EBDAC /* AddPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE82B52194FD83000EBDAC /* AddPostTableViewController.swift */; };
 		19FE82B82194FD9D000EBDAC /* PhotoSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE82B72194FD9C000EBDAC /* PhotoSelectorViewController.swift */; };
+		19FE82BA2194FFB4000EBDAC /* SeacrhableRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE82B92194FFB4000EBDAC /* SeacrhableRecord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		19FE82B32194EEC1000EBDAC /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		19FE82B52194FD83000EBDAC /* AddPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostTableViewController.swift; sourceTree = "<group>"; };
 		19FE82B72194FD9C000EBDAC /* PhotoSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorViewController.swift; sourceTree = "<group>"; };
+		19FE82B92194FFB4000EBDAC /* SeacrhableRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeacrhableRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				19FE829B2193B459000EBDAC /* Comment.swift */,
 				19FE82A22193CC8A000EBDAC /* Views */,
 				19FE829F2193CAED000EBDAC /* ModelController */,
+				19FE82B92194FFB4000EBDAC /* SeacrhableRecord.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				19FE82B82194FD9D000EBDAC /* PhotoSelectorViewController.swift in Sources */,
 				19FE829A2193B30C000EBDAC /* Post.swift in Sources */,
 				19FE82B62194FD84000EBDAC /* AddPostTableViewController.swift in Sources */,
+				19FE82BA2194FFB4000EBDAC /* SeacrhableRecord.swift in Sources */,
 				19FE82A72193CE9C000EBDAC /* PostDetailTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

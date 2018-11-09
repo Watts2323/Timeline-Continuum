@@ -40,6 +40,11 @@ class PostDetailTableViewController: UITableViewController {
         //Implement the present alert controller here
     }
     @IBAction func shareButtonTapped(_ sender: UIButton) {
+        guard let post = post, let photo = post.photo else { return }
+        let activityViewController = UIActivityViewController(activityItems: [photo, post.caption], applicationActivities: nil)
+        DispatchQueue.main.async {
+            self.present(activityViewController, animated: true)
+        }
         
     }
     @IBAction func followButtonTapped(_ sender: UIButton) {
@@ -64,24 +69,6 @@ class PostDetailTableViewController: UITableViewController {
         }
 
         return cell
-    }
-
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
 }
 
