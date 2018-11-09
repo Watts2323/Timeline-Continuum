@@ -17,14 +17,13 @@ class Post {
     fileprivate let timestampKey = "timestamp"
     fileprivate let photoDataKey = "photoData"
     
-    
+    var recordID = CKRecord.ID(recordName: UUID().uuidString)
     var photoData: Data?
     var timestamp: Date
     var comments: [Comment] = []
     var caption: String
     //that copies the contents of the photoData: NSData? property to a file in a temporary directory and returns the URL to the file. Must write to temporary directory to be able to pass image file path url to CKAsset
     var tempPhotoURL: URL?
-    var recordID: CKRecord.ID
     
     init(timestamp: Date = Date(), comments: [Comment] = [], caption: String, photo: UIImage) {
         self.timestamp = timestamp

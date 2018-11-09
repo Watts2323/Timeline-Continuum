@@ -33,11 +33,18 @@ class PostDetailTableViewController: UITableViewController {
     func updateViews(){
         guard let post = post else { return }
         photoImageView.image = post.photo
+        
+        PostController.shared.checkForSubscription(to: post) { (isSubscribed) in
+            DispatchQueue.main.async {
+                let buttonTitle = isSubscribed ? "Unfollow" : "Follow"
+                self.followButton.setTitle(buttonTitle, for: .normal)
+            }
+        }
     }
     
     //MARK: - Actions
     @IBAction func commentButtonTapped(_ sender: UIButton) {
-        //Implement the present alert controller here
+        presentAlertController()
     }
     @IBAction func shareButtonTapped(_ sender: UIButton) {
         guard let post = post, let photo = post.photo else { return }
@@ -48,7 +55,18 @@ class PostDetailTableViewController: UITableViewController {
         
     }
     @IBAction func followButtonTapped(_ sender: UIButton) {
-        
+        guard let post = post else {return}
+        PostController.shared.toggleSubscriptionTo(commentsForPost: post) { (success, error) in
+            if let error = error {
+                print("🙅🏿‍♂️  There was an error in \(#function) ; \(error)  ; \(error.localizedDescription)  🙅🏿‍♂️")
+                return
+            }
+            if success{
+                DispatchQueue.main.async {
+                    self.updateViews()
+                }
+            }
+        }
     }
     
 
@@ -81,7 +99,7 @@ extension PostDetailTableViewController {
         }
         
         let okAction = UIAlertAction(title: "OK 👌🏿", style: .default) { (_) in
-            guard let commentText = alertController.textFields?.first?.text, let post = self.post else { return }
+            guard let commentText = alertController.textFields?.first?.text, let _ = self.post else { return }
             guard !commentText.isEmpty else { return }
         }
     }

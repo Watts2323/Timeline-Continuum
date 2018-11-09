@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -87,6 +88,8 @@
                                         <constraint firstItem="dho-QE-S7L" firstAttribute="leading" secondItem="4Pf-Uz-7cs" secondAttribute="leadingMargin" constant="15" id="tWi-fm-75T"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="captionLabel" destination="55M-Pu-jOd" id="ewX-RC-pcS"/>
                                     <outlet property="commentCountLabel" destination="YSS-LV-yKG" id="3Xu-s1-qZs"/>
@@ -145,21 +148,27 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kab-Iz-xj4">
                                                     <rect key="frame" x="0.0" y="0.0" width="84.5" height="30"/>
-                                                    <state key="normal" title="Comment"/>
+                                                    <state key="normal" title="Comment">
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
                                                     <connections>
                                                         <action selector="commentButtonTapped:" destination="Klc-X8-h5j" eventType="touchUpInside" id="pIX-ik-EHa"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8X-3a-3MI">
                                                     <rect key="frame" x="154.5" y="0.0" width="40" height="30"/>
-                                                    <state key="normal" title="Share"/>
+                                                    <state key="normal" title="Share">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
                                                     <connections>
                                                         <action selector="shareButtonTapped:" destination="Klc-X8-h5j" eventType="touchUpInside" id="c3K-Wh-Y3w"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C14-GG-Ah7">
                                                     <rect key="frame" x="264.5" y="0.0" width="44" height="30"/>
-                                                    <state key="normal" title="Follow"/>
+                                                    <state key="normal" title="Follow">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
                                                     <connections>
                                                         <action selector="followButtonTapped:" destination="Klc-X8-h5j" eventType="touchUpInside" id="oeI-Ma-c4r"/>
                                                     </connections>
@@ -172,7 +181,7 @@
                                     </constraints>
                                 </stackView>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" textLabel="x23-Kn-tdQ" detailTextLabel="dsq-sK-Z8h" rowHeight="106" style="IBUITableViewCellStyleSubtitle" id="VZA-hj-F52">
@@ -238,11 +247,12 @@
                                                     <rect key="frame" x="16" y="56" width="343" height="310"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                     <connections>
-                                                        <segue destination="fmp-sD-leC" kind="embed" id="4eN-I1-kSh"/>
+                                                        <segue destination="fmp-sD-leC" kind="embed" identifier="toPhotoSelectVC" id="4eN-I1-kSh"/>
                                                     </connections>
                                                 </containerView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -285,7 +295,7 @@
                                                     <rect key="frame" x="16" y="6" width="343" height="30"/>
                                                     <state key="normal" title="Add Post"/>
                                                     <connections>
-                                                        <action selector="addPostButtonTapped:" destination="YCq-zX-F56" eventType="touchUpInside" id="nci-DK-iEP"/>
+                                                        <action selector="addPostButtonTapped:" destination="YCq-zX-F56" eventType="touchUpInside" id="rdQ-e2-Mud"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -388,6 +398,7 @@
                             <constraint firstItem="5Co-w1-GlI" firstAttribute="leading" secondItem="2XU-RF-5No" secondAttribute="leadingMargin" constant="-16" id="v2V-31-2HW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Luj-X4-e9j" secondAttribute="trailing" constant="-16" id="vIh-Wo-xPh"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yxe-O6-3Na"/>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="5Co-w1-GlI" id="60l-LL-JWz"/>

@@ -22,6 +22,7 @@
 		19FE82B62194FD84000EBDAC /* AddPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE82B52194FD83000EBDAC /* AddPostTableViewController.swift */; };
 		19FE82B82194FD9D000EBDAC /* PhotoSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE82B72194FD9C000EBDAC /* PhotoSelectorViewController.swift */; };
 		19FE82BA2194FFB4000EBDAC /* SeacrhableRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE82B92194FFB4000EBDAC /* SeacrhableRecord.swift */; };
+		19FE82DA21956771000EBDAC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE82D921956771000EBDAC /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		19FE82B52194FD83000EBDAC /* AddPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostTableViewController.swift; sourceTree = "<group>"; };
 		19FE82B72194FD9C000EBDAC /* PhotoSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorViewController.swift; sourceTree = "<group>"; };
 		19FE82B92194FFB4000EBDAC /* SeacrhableRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeacrhableRecord.swift; sourceTree = "<group>"; };
+		19FE82D921956771000EBDAC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				19FE82B32194EEC1000EBDAC /* Date.swift */,
+				19FE82D921956771000EBDAC /* Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				1978112B2193A82100CC9FD4 /* AppDelegate.swift in Sources */,
 				19FE829E2193B75F000EBDAC /* PostController.swift in Sources */,
 				19FE82A12193CC87000EBDAC /* PostTableViewCell.swift in Sources */,
+				19FE82DA21956771000EBDAC /* Extension.swift in Sources */,
 				19FE82B42194EEC1000EBDAC /* Date.swift in Sources */,
 				19FE82A42193CD95000EBDAC /* PostListTableViewController.swift in Sources */,
 				19FE829C2193B459000EBDAC /* Comment.swift in Sources */,
